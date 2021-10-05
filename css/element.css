@@ -1,0 +1,730 @@
+section{
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5{
+    color: var(--title-font-color);
+    font-weight: 600;
+}
+
+p{
+    color: var(--content-font-color);
+    font-weight: 400;
+}
+button{
+    border: 0;
+    color: transparent;
+    background-color: transparent;
+    padding: 4px;
+}
+hr{
+    display: block;
+    border: 0;
+    border-bottom: 1px solid var(--main-font-color);
+}
+blockquote{
+    border-left: 3px solid var(--main-font-color);
+    margin-left: 0;
+    padding-left: 40px;
+}
+thead{
+    color:var(--title-font-color);
+}
+thead th, tbody td{
+    text-align: start;
+    padding: 13px;
+}
+ol>li{
+    padding: 4px 0px 4px 4px;
+}
+ol{
+    padding-left: 21px;
+    padding-bottom: 34px;
+}
+ul.None li{
+    display: flex;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    border: 0;
+    margin-left: -14px;
+}
+ul.None li>.half>*{
+    padding-top: 14px;
+}
+ul.left{
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ul.left>li{
+    margin-left: 0px;
+    justify-content: center;
+}
+ul.left>li:first-child>button{
+    padding: 0px 8px 0px 0px;
+}
+ul.left>li>button, ul.left>li>p{
+    padding: 0px 8px;
+}
+ul.left>li:last-child>button{
+    padding: 0px 0px 0px 8px;
+}
+ul.left li>a{
+    color: var(--main-color);
+}
+ul.left li>p{
+    margin-bottom: 0;
+}
+dt{
+    font-weight: 600;
+}
+header{
+    position: relative;
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.logo svg{
+    cursor: pointer;
+    padding-right: 8px;
+    fill: var(--content-font-color);
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+}
+.logo svg:hover{
+    fill: var(--main-color);
+}
+header>div{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding-bottom: 14px;
+    border-bottom: 5px solid var(--main-color);
+}
+header>div div:first-child:hover p{
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    color: var(--main-color);
+}
+article{
+    color: var(--content-font-color);
+    padding-bottom: 52px;
+    margin-bottom: 52px;
+    border-bottom: 1px solid var(--main-font-color);
+}
+article:last-child{
+    border-bottom: 0px;
+}
+article>div, .subarticle{
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+li>.half>button{
+    margin: auto auto auto 0px;
+}
+button.one{
+    width: 100% !important;
+}
+button>a, input[type="submit"], input[type="reset"]{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-align: center;
+}
+button>a:hover, input[type="reset"]:hover{
+    background-color: rgb(250, 236, 236);
+}
+button>a:active, input[type="reset"]:active{
+    background-color: rgb(250, 220, 220);
+}
+button>a.disable{
+    cursor: default;
+    opacity: 0.5;
+}
+button>a.primary, input[type="submit"]{
+    background-color: var(--main-color);
+    color: white;
+    transition: 0.5s;
+}
+a:not(:first-child or :last-child){
+
+}
+button>a.primary:not(.disable):hover, input[type="submit"]:hover{
+    border: 2px solid var(--main-color-hover);
+    background-color: var(--main-color-hover);
+}
+button>a.primary:not(.disable):active, input[type="submit"]:active{
+    border: 2px solid var(--main-color-select);
+    background-color: var(--main-color-select);
+}
+button>a>svg{
+    margin-right: 5px;
+}
+button>a.primary>svg{
+    fill: white;
+}
+button>a.pagination{
+    padding:  3px 7px;
+}
+button>a.noborder{
+    border: 0 !important;
+}
+table{
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+table tr:last-child>th, table tr:nth-last-child(2)>td{
+    border-bottom: 2px solid var(--main-font-color);
+}
+table tr>td{
+    border-bottom: 1px solid var(--main-font-color);
+}
+table tr:last-child>td{
+    border-bottom: 0;
+}
+table.alt>tbody>tr>td{
+    border: 1px solid var(--main-font-color);
+}
+table.alt>thead>tr:last-child>th ,table.alt>tbody>tr:last-child>td{
+    border: 0;
+}
+
+.borderradius{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.imgleft{
+    float: left;
+    width: 35%;
+    margin-top: 1rem;
+    margin-right: 32px;
+}
+.imgright{
+    float: right;
+    width: 35%;
+    margin-top: 1rem;
+    margin-left: 32px;
+}
+.imagefit{
+    width: 100%;
+    padding-bottom: 16px;
+}
+.imagefit>div{
+    width: 100%;
+}
+.imagefit>img{
+    width: 100%;
+    margin-bottom: 4%;
+}
+.imagefit img{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.imagefit div img{
+    margin-right: 1%;
+    margin-bottom: 1%;
+    width: calc(30%);
+}
+.subarticle ul{
+    list-style: disc;
+    padding-left: 17px;
+    padding-bottom: 34px;
+}
+.subarticle ul>li{
+    padding: 4px 0px 4px 8px;
+    border-top: 0px;
+}
+.subarticle>svg{
+    width: 21px;
+    fill: var(--content-font-color);
+}
+.subarticle ul.alt{
+    list-style: none;
+    padding-left: 0px;
+}
+.subarticle ul.alt>li{
+    padding: 16px 0px 16px 0px;
+    border-top: 1px solid var(--main-font-color);
+}
+.subarticle ul.alt>li:first-child{
+    border-top: 0;
+}
+
+article>div>div, .subarticle>div{
+    margin-right: 36px;
+}
+
+.titlecolor{
+    font-weight: 600;
+    color:  var(--title-font-color);
+}
+.contentcolor{
+    font-weight: 600;
+    color: var(--content-font-color);
+}
+.earlyhalf{
+    margin-right: 0px;
+}
+.box, code.pre{
+    display: block;
+    border-radius: 5px;
+    border: 1px solid var(--main-font-color);
+    padding: 2rem 2rem 0 2rem;
+    margin: 0.1rem 0.1rem 2rem 0.1rem;
+}
+.formflex{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-bottom: 16px;
+}
+.formflex>div{
+    width: 100%;
+}
+.formflex>ul{
+    width: 100%;
+    justify-content: flex-start;
+}
+.formflex>ul>li{
+    width: fit-content;
+    align-items: center;
+    margin: 0px auto 0px 0px;
+}
+select, input, textarea{
+    color: var(--content-font-color);
+    font-weight: 400;
+}
+textarea{
+    width: 92%;
+}
+input[type="radio"]::before{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    content: url(../svg/check-solid.svg);
+    position: relative;
+    top: -0.375rem;
+    left: -0.375rem;
+    color: white;
+    background-color: white;
+    border-radius: 50%;
+    border:  1px solid var(--main-font-color);
+}
+input[type="radio"]:checked::before{
+    background-color: var(--title-font-color);
+    border:  1px solid var(--title-font-color);
+}
+input[type="checkbox"]::before{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    content: url(../svg/check-solid.svg);
+    position: relative;
+    top: -0.375rem;
+    left: -0.375rem;
+    color: white;
+    background-color: white;
+    border-radius: 5px;
+    border:  1px solid var(--main-font-color);
+}
+input[type="checkbox"]:checked::before{
+    background-color: var(--title-font-color);
+    border:  1px solid var(--title-font-color);
+}
+
+@media all and (min-width:1680px){
+    ul.None li>*{
+        padding-left: 14px;
+    }
+    body>div.active{
+        width: calc(100% - 208px);
+    }
+    body>div{
+        width: calc(100% - 405px - 208px);
+        padding-left: 104px;
+        padding-right: 104px;
+    }
+    section{
+        padding-top: 104px;
+        padding-bottom: 70px;
+    }
+    h1{
+        font-size: 70px;
+        margin: 0px 0px 70px 0px;
+    }
+    h2{
+        font-size: 30px;
+        margin: 0px 0px 30px 0px;
+    }
+    h3{
+        font-size: 21px;
+        margin: 0px 0px 21px 0px;
+    }
+    h4{
+        font-size: 19px;
+        margin: 0px 0px 19px 0px;
+    }
+    hr{
+        margin: 34px 0px;
+    }
+    dt{
+        font-size: 14px;
+        padding-bottom: 14px;
+    }
+    p{
+        font-size: 17px;
+        margin-bottom: 34px;
+    }
+    .formflex label, select, input, textarea{
+        font-size: 17px;
+    }
+    header>div{
+        padding-top: 100px;
+    }
+    header svg{
+        width: 22px;
+        height: 22px;
+    }
+    .smalltitle {
+        font-size: 19px;
+    }
+    .one_third{
+        width: calc(33.33% - 36px);
+    }
+    .half{
+        width: calc(50% - 36px) !important;
+    }
+    .earlyhalf{
+        width: calc(50% - 18px);
+        padding-right: 18px;
+    }
+    .earlyhalf:last-child{
+        width: calc(50% - 18px);
+        padding-right: 0px;
+        padding-left: 18px;
+    }
+    button.half{
+        width: 50%;
+    }
+    button>a , input[type="submit"], input[type="reset"]{
+       font-size: 14px;
+       padding: 14px 31px 14px 31px;
+    }
+    button>a>svg{
+        width: 14px;
+    }
+    button>a.large{
+        font-size: 17px;
+        padding: 18px 39px 18px 39px;
+    }    
+    button>a.large>svg{
+        width: 17px;
+    }
+    button>a.small{
+        font-size: 10px;
+        padding: 10px 23px 10px 23px;
+    } 
+    button>a.small>svg{
+        width: 10px;
+    }
+}
+@media all and (min-width:1280px) and (max-width:1679px){
+    ul.None li>*{
+        padding-left: 11px;
+    }
+    body>div.active{
+        width: calc(100% - 146px);
+    }
+    body>div{
+        width: calc(100% - 332px - 146px);
+        padding-left: 73px;
+        padding-right: 73px;
+    }
+    section{
+        padding-top: 73px;
+        padding-bottom: 44px;
+    }
+    h1{
+        font-size: 51px;
+        margin: 0px 0px 51px 0px;
+    }
+    h2{
+        font-size: 25px;
+        margin: 0px 0px 25px 0px;
+    }
+    h3{
+        font-size: 18px;
+        margin: 0px 0px 18px 0px;
+    }
+    h4{
+        font-size: 16px;
+        margin: 0px 0px 16px 0px;
+    }
+    dt{
+        font-size: 14px;
+        padding-bottom: 14px;
+    }
+    p{
+        font-size: 14px;
+        margin-bottom: 29px;
+    }
+    .formflex label, select, input, textarea{
+        font-size: 14px;
+    }
+    header>div{
+        padding-top: 80px;
+    }
+    header svg{
+        width: 18px;
+        height: 18px;
+    }
+    .smalltitle {
+        font-size: 16px;
+    }
+    .one_third{
+        width: calc(33.33% - 36px);
+    }
+    .half{
+        width: calc(50% - 36px)  !important;
+    }
+    .earlyhalf{
+        width: calc(50% - 18px);
+        padding-right: 18px;
+    }
+    .earlyhalf:last-child{
+        width: calc(50% - 18px);
+        padding-right: 0px;
+        padding-left: 18px;
+    }
+    button.half{
+        width: 50%;
+    }
+    button>a, input[type="submit"], input[type="reset"]{
+       font-size: 11px;
+       padding: 11px 26px 11px 26px;
+    }
+    button>a>svg{
+        width: 11px;
+    }
+    button>a.large{
+        font-size: 14px;
+        padding: 15px 33px 15px 33px;
+    }    
+    button>a.large>svg{
+        width: 14px;
+    }
+    button>a.small{
+        font-size: 10px;
+        padding: 10px 20px 10px 20px;
+    } 
+    button>a.small>svg{
+        width: 10px;
+    }
+}
+@media all and (max-width:1279px){
+    ul.None li>*{
+        padding-left: 11px;
+    }
+    body>div.active{
+        width: calc(100% - 106px);
+    }
+    body>div{
+        width: calc(100% - 332px - 106px);
+        padding-left: 53px;
+        padding-right: 53px;
+    }
+    section{
+        padding-top: 53px;
+        padding-bottom: 26px;
+    }
+    h1{
+        font-size: 46px;
+        margin: 0px 0px 46px 0px;
+    }
+    h2{
+        font-size: 23px;
+        margin: 0px 0px 23px 0px;
+    }
+    h3{
+        font-size: 16px;
+        margin: 0px 0px 16px 0px;
+    }
+    h4{
+        font-size: 14px;
+        margin: 0px 0px 14px 0px;
+    }
+    dt{
+        font-size: 13px;
+        padding-bottom: 13px;
+    }
+    p{
+        font-size: 13px;
+        margin-bottom: 26px;
+    }
+    .formflex label, select, input, textarea{
+        font-size: 13px;
+    }
+    header>div{
+        padding-top: 80px;
+    }
+    header svg{
+        width: 16px;
+        height: 16px;
+    }
+    .smalltitle {
+        font-size: 15px;
+    }
+    .one_third{
+        width: calc(33.33% - 36px);
+    }
+    .half{
+        width: calc(50% - 36px)  !important;
+    }
+    .earlyhalf{
+        width: calc(50% - 18px);
+        padding-right: 18px;
+    }
+    .earlyhalf:last-child{
+        width: calc(50% - 18px);
+        padding-right: 0px;
+        padding-left: 18px;
+    }
+    button.half{
+        width: 50%;
+    }
+    button>a, input[type="submit"], input[type="reset"] {
+       font-size: 10px;
+       padding: 10px 26px 10px 26px;
+    }
+    button>a>svg{
+        width: 10px;
+    }
+    button>a.large{
+        font-size: 13px;
+        padding: 14px 30px 14px 30px;
+    }    
+    button>a.large>svg{
+        width: 13px;
+    }
+    button>a.small{
+        font-size: 10px;
+        padding: 5px 18px 5px 18px;
+    } 
+    button>a.small>svg{
+        width: 10px;
+    }
+}
+@media all and (min-width:921px) and (max-width:980px){
+    ul.None li>*{
+        padding-left: 10px;
+    }
+    body>div.active{
+        width: calc(100% - 106px);
+    }
+    body>div{
+        width: calc(100% - 332px - 106px);
+        padding-left: 53px;
+        padding-right: 53px;
+    }
+    h1{
+        font-size: 43px;
+        margin: 0px 0px 43px 0px;
+    }
+    button.half{
+        width: 50%;
+    }
+    .one_third, .earlyhalf, .earlyhalf:last-child{
+        width: 100%;
+    }
+    .earlyhalf, .earlyhalf:last-child{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .half{
+        width: calc(49% - 36px)  !important;
+    }
+}
+@media all and (min-width:737px) and (max-width:920px){
+    ul.None li>*{
+        padding-left: 9px;
+    }
+    body>div.active{
+        width: calc(100% - 106px);
+    }
+    body>div{
+        width: calc(100% - 332px - 106px);
+        padding-left: 53px;
+        padding-right: 53px;
+    }
+    h1{
+        font-size: 40px;
+        margin: 0px 0px 40px 0px;
+    }
+    button.half{
+        width: 50%;
+    }
+    .one_third, .half, .earlyhalf, .earlyhalf:last-child{
+        width: 100%  !important;
+    }
+    .earlyhalf, .earlyhalf:last-child{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    ul.None li>.half{
+        width: calc(50% - 36px);
+    }
+}
+@media all and (max-width:736px){
+    ul.None li>*{
+        padding-left: 7px;
+    }
+    body>div.active{
+        width: calc(100% - 52px);
+    }
+    body>div{
+        width: calc(100% - 332px - 52px);
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+    section{
+        padding-top: 40px;
+        padding-bottom: 13px;
+    }
+    h1{
+        font-size: 26px;
+        margin: 0px 0px 26px 0px;
+    }
+    h2{
+        font-size: 20px;
+        margin: 0px 0px 20px 0px;
+    }
+    header>div div:last-child{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 16px;
+    }
+    button.half{
+        width: 50%;
+    }
+    .one_third, .half, .earlyhalf, .earlyhalf:last-child{
+        width: 100%  !important;
+    }
+    .earlyhalf, .earlyhalf:last-child{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
