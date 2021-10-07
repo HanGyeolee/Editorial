@@ -23,7 +23,7 @@ css에서 다음과 같은 반응형 작업이 작동하지 않았습니다.
 ## SideMenu
 SideMenu에 해당하는 태그(여기서는 aside를 사용하였습니다.)가 active 클래스를 가진 경우 도출되고, 가지지 않은 경우 화면 바깥으로 이동하도록 하였습니다.
 
-[menubar.css](https://github.com/HanGyeolee/Editorial/blob/main/css/menubar.css)
+[menubar.css](https://github.com/HanGyeolee/Editorial/blob/main/css/menubar.css#L278)
 ``` css
 aside{
     transform: translateX(-100);
@@ -35,7 +35,7 @@ aside.active{
 
 SideMenu가 도출되기 위해 Hamburger 클래스가 클릭되면 SideMenu의 active를 껐다 켰다 합니다.
 
-[menubar.js](https://github.com/HanGyeolee/Editorial/blob/main/js/menubar.js)
+[menubar.js](https://github.com/HanGyeolee/Editorial/blob/main/js/menubar.js#L44)
 ``` javascript
 $('.hamburger').click(function(){
     if($('aside').hasClass('active')){
@@ -66,9 +66,10 @@ $('.hamburger').click(function(){
 1. 체크 SVG 삽입
 2. 테두리 그리기
 3. 체크 되었을 때 배경색 변경
-을 통해서 이미 기존에 존재하는 marker 부분을 가리고, 새로 커스텀된 이미지를 최상단에 보여주는 형식으로 input을 customize 할 수 있었습니다.
+을 통해서 이미 기존에 존재하는 marker 부분을 가리고, 새로 커스텀된 이미지를 최상단에 보여주는 형식으로 input을 customize 할 수 있었습니다.    
+(3번을 보고 다시 생각해보니, before를 새로 그리는 것이 아닌 marker를 수정해도 괜찮지 않을 까 하는 생각이 듭니다.)
 
-[element.css](https://github.com/HanGyeolee/Editorial/blob/main/css/element.css)
+[element.css](https://github.com/HanGyeolee/Editorial/blob/main/css/element.css#L313)
 ``` css
 input[type="radio"]::before{
   ...
@@ -83,4 +84,4 @@ input[type="radio"]:checked::before{
 }
 ```
 
-checkbox 또한 마찬가지 방식으로 꾸몄습니다.
+checkbox 또한 동일한 방식으로 꾸몄습니다.
